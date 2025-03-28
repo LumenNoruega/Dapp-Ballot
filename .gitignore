@@ -1,7 +1,7 @@
-# dependencies
-node_modules
+# Dependencies
+node_modules/
 
-# yarn
+# Yarn
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
@@ -9,15 +9,33 @@ node_modules
 !.yarn/sdks
 !.yarn/versions
 
-# eslint
+# Build output
+.next/
+out/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
 .eslintcache
+.next/cache/
+.vercel/
+*.log
 
-# misc
+# IDE settings
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
-
-# IDE
-.vscode
-.idea
-
-# cli
-dist
+Thumbs.db
